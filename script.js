@@ -1,3 +1,9 @@
+// first create win lose draw vars that will store the win lose draw strings
+let win = 0, lose = 0, draw = 0;
+// need seperate var for computer win and draw
+let winComputer = 0, drawComputer = 0;
+// create var playerWinLoss computerWinLoss
+let playerWinLoss = 0, computerWinLoss = 0;
 // create var called computerSelection that takes the random number generated
 let computerSelection;
 // create functio called getComputerChoice that creates random number 1-3 
@@ -50,35 +56,34 @@ if (playerSelection === 'ROCK'
             console.log('You Lose! Better luck next time!');
             lose = 0; 
             winComputer = 1;
-            }
+        }
+        // each win loss will be added to both vars respectively
             playerWinLoss = playerWinLoss + win + lose + draw;
             computerWinLoss = computerWinLoss + winComputer + drawComputer;
-            console.log(playerWinLoss);
-            console.log(computerWinLoss);
-
+        // have to reset the values each time    
+            win = 0;
+            lose = 0;
+            draw = 0;
+            winComputer = 0;
+            drawComputer = 0;
+            
+        }
     }
-}
-
-// create function called game that runs 5 of oneRound using a for loop
-let i;
-function game() {
-    for (i=0; i <= 5; i++ ) {
-        oneRound();
-    }
-
     
-}
-oneRound();
-
-//want to add a final winner or loser of total game after game()
-// first create win lose draw vars that will store the win lose draw strings
-let win = 0, lose = 0, draw = 0;
-// need seperate var for computer win and draw
-let winComputer = 0, drawComputer = 0;
-
-// create var playerWinLoss computerWinLoss
-let playerWinLoss = 0, computerWinLoss = 0;
-// each win loss will be added to both vars respectively
-// if...else for playerWinLoss > computerWinLoss player < computer and player === computer titling overall winner
+    // create function called game that runs 5 of oneRound using a for loop
+    let i;
+    function game() {
+        for (i=0; i <= 5; i++ ) {
+            oneRound();
+        }
+       
+        
+        
+    }
+    game();
+    //want to add a final winner or loser of total game after game()
+    
+    
+    // if...else for playerWinLoss > computerWinLoss player < computer and player === computer titling overall winner
 
 
