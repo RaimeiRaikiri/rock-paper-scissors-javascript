@@ -42,8 +42,8 @@ if (playerSelection === 'ROCK'
             console.log('You Win! Congratulations!')
         } else {
             console.log('You Lose! Better luck next time!');
-            
-        }
+
+            }
 
     }
 }
@@ -60,6 +60,7 @@ oneRound();
 
 //want to add a final winner or loser of total game after game()
 // first create win lose draw vars that will store the win lose draw strings
+let win, lose, draw;
 // convert these strings to numbers draw = 1 lose = 0 win =1
 // create var playerWinLoss computerWinLoss
 // each win loss will be added to both vars respectively
