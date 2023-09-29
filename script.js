@@ -8,7 +8,7 @@ function getComputerChoice() {
     if (computerSelection === 1) {
         computerSelection = 'ROCK';
     } else if (computerSelection === 2) {
-        computerSelection = 'PAPPER';
+        computerSelection = 'PAPER';
     } else if (computerSelection === 3) {
         computerSelection = 'SCISSORS';
     }
