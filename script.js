@@ -15,6 +15,7 @@ function getComputerChoice() {
 }
 
 // create var playerSelection
+let playerSelection;
 // create a prompt that takes rock , paper , scissors case insensitive by setting to uppercase 
 // add prompt answer to playerSelection
 // write if...else that decides winner and loser
