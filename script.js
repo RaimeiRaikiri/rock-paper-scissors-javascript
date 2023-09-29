@@ -33,16 +33,20 @@ if (playerSelection === 'ROCK'
         console.log('Your choice was ' + playerSelection);
         console.log('Computer\'s choice was ' + computerSelection)
         if (playerSelection === computerSelection) {
-        console.log('It\'s a draw!')
+        console.log('It\'s a draw!');
+        draw = 'It\'s a draw!';
         } else if (playerSelection === 'ROCK' && computerSelection === 'SCISSORS') {
-            console.log('You Win! Congratulations!')
+            console.log('You Win! Congratulations!');
+            win = 'You Win! Congratulations!';
         } else if (playerSelection === 'PAPER' && computerSelection === 'ROCK') {
-            console.log('You Win! Congratulations!')
+            console.log('You Win! Congratulations!');
+            win = 'You Win! Congratulations!';
         } else if (playerSelection === 'SCISSORS' && computerSelection === 'PAPER') {
-            console.log('You Win! Congratulations!')
+            console.log('You Win! Congratulations!');
+            win = 'You Win! Congratulations!';
         } else {
             console.log('You Lose! Better luck next time!');
-
+            lose = 'You Lose! Better luck next time!'
             }
 
     }
