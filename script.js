@@ -25,6 +25,9 @@ playerSelection = playerSelection.toUpperCase();
 if (playerSelection === 'ROCK'
     || playerSelection === 'PAPER'
     || playerSelection === 'SCISSORS') {
+        // console should log the players selection and computers before logging a winner
+        console.log('Your choice was ' + playerSelection);
+        console.log('Computer\'s choice was ' + computerSelection)
         if (playerSelection === computerSelection) {
         console.log('It\'s a draw!')
         } else if (playerSelection === 'ROCK' && computerSelectionq === 'SCISSORS') {
@@ -38,7 +41,6 @@ if (playerSelection === 'ROCK'
         }
 
     }
-// console should log the players selection and computers before logging a winner
 // create function called oneRound that runs a round of the game 
 // create function called game that runs 5 of oneRound using a for loop
 
