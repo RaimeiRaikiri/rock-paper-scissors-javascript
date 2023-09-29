@@ -76,7 +76,13 @@ if (playerSelection === 'ROCK'
         for (i=0; i <= 5; i++ ) {
             oneRound();
         }
-       
+       if (playerWinLoss === computerWinLoss) {
+        console.log('Final result: Draw!')
+       } else if (playerWinLoss > computerWinLoss) {
+        console.log('Final result: Congratulations! You Win!')
+       } else if (playerWinLoss < computerWinLoss) {
+        console.log('Final result: You lost! Better luck next time!')
+       }
         
         
     }
