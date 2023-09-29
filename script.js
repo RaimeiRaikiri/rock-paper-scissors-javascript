@@ -41,7 +41,8 @@ if (playerSelection === 'ROCK'
         } else if (playerSelection === 'SCISSORS' && computerSelection === 'PAPER') {
             console.log('You Win! Congratulations!')
         } else {
-            console.log('You Lose! Better luck next time!')
+            console.log('You Lose! Better luck next time!');
+            
         }
 
     }
@@ -53,6 +54,15 @@ function game() {
     for (i=0; i <= 5; i++ ) {
         oneRound();
     }
+    
 }
-game();
+oneRound();
+
+//want to add a final winner or loser of total game after game()
+// first create win lose draw vars that will store the win lose draw strings
+// convert these strings to numbers draw = 1 lose = 0 win =1
+// create var playerWinLoss computerWinLoss
+// each win loss will be added to both vars respectively
+// if...else for playerWinLoss > computerWinLoss player < computer and player === computer titling overall winner
+
 
