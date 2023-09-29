@@ -36,6 +36,7 @@ if (playerSelection === 'ROCK'
             // convert these strings to numbers draw = 1 lose = 0 win =1
         console.log('It\'s a draw!');
         draw = 1 ;
+        drawComputer = 1;
         } else if (playerSelection === 'ROCK' && computerSelection === 'SCISSORS') {
             console.log('You Win! Congratulations!');
             win = 1;
@@ -47,8 +48,13 @@ if (playerSelection === 'ROCK'
             win = 1;
         } else {
             console.log('You Lose! Better luck next time!');
-            lose = 0;
+            lose = 0; 
+            winComputer = 1;
             }
+            playerWinLoss = playerWinLoss + win + lose + draw;
+            computerWinLoss = computerWinLoss + winComputer + drawComputer;
+            console.log(playerWinLoss);
+            console.log(computerWinLoss);
 
     }
 }
@@ -59,15 +65,19 @@ function game() {
     for (i=0; i <= 5; i++ ) {
         oneRound();
     }
+
     
 }
 oneRound();
 
 //want to add a final winner or loser of total game after game()
 // first create win lose draw vars that will store the win lose draw strings
-let win, lose, draw;
+let win = 0, lose = 0, draw = 0;
+// need seperate var for computer win and draw
+let winComputer = 0, drawComputer = 0;
 
 // create var playerWinLoss computerWinLoss
+let playerWinLoss = 0, computerWinLoss = 0;
 // each win loss will be added to both vars respectively
 // if...else for playerWinLoss > computerWinLoss player < computer and player === computer titling overall winner
 
