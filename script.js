@@ -14,23 +14,26 @@ function getComputerChoice() {
     }
 }
 
+
 // create var playerSelection
 let playerSelection;
 // create a prompt that takes rock , paper , scissors case insensitive by setting to uppercase 
 // add prompt answer to playerSelection
 playerSelection = prompt('Please declare your choice: Rock, Paper, or Scissors', '');
 playerSelection = playerSelection.toUpperCase();
-
+// create function called oneRound that runs a round of the game 
+function oneRound() {
 // write if...else that decides winner and loser
 if (playerSelection === 'ROCK'
     || playerSelection === 'PAPER'
     || playerSelection === 'SCISSORS') {
+        getComputerChoice();
         // console should log the players selection and computers before logging a winner
         console.log('Your choice was ' + playerSelection);
         console.log('Computer\'s choice was ' + computerSelection)
         if (playerSelection === computerSelection) {
         console.log('It\'s a draw!')
-        } else if (playerSelection === 'ROCK' && computerSelectionq === 'SCISSORS') {
+        } else if (playerSelection === 'ROCK' && computerSelection === 'SCISSORS') {
             console.log('You Win! Congratulations!')
         } else if (playerSelection === 'PAPER' && computerSelection === 'ROCK') {
             console.log('You Win! Congratulations!')
@@ -41,6 +44,8 @@ if (playerSelection === 'ROCK'
         }
 
     }
-// create function called oneRound that runs a round of the game 
+}
+oneRound();
 // create function called game that runs 5 of oneRound using a for loop
+
 
